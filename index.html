@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - roofing repair service</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Service Quote Estimator</title>
+    <style>
+        /* CSS styles */
+        /* Top navigation style */
+        .topnav {
+            background-color: black; /* Dark blue */
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        /* Top navigation links */
+        .topnav a {
+            float: right;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #1976D2; /* Darker blue */
+        }
+
+        /* Main content container */
+        .container {
+            max-width: 1200px; /* Adjust as needed */
+            margin: 0 auto; /* Center content */
+            padding: 20px; /* Add space around content */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        /* Sidebar style */
+        .sidebar {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+        }
+
+        .sidebar form {
+            margin-top: 20px;
+        }
+
+        .sidebar label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .sidebar input, .sidebar select {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .sidebar button {
+            width: 100%;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .sidebar button:hover {
+            background-color: #45a049;
+        }
+
+        /* Video player style */
+        .videoPlayer {
+            float: right;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .videoPlayer iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        /* Table style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray */
+        }
+
+        td img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top navigation -->
+    <div class="topnav">
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#ROOF-RUFF-SERVICE-PROVIDER">ROOF-RUFF SERVICE PROVIDER</a>
+    </div>
+
+    <div class="container">
+        <!-- Logo -->
+        <center><img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/433465871_301691122938812_6345156948751608151_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3WYvQfy9Go8AX_WijFh&_nc_ht=scontent-ord5-2.xx&oh=00_AfAKp2GUV-W7hhjj1IHkPuhcn5K-yu6m-y2T9gNmeAFSBw&oe=65FF0CF7" alt="Toxtermi Logo"></center>
+        <br>
+
+        <!-- Video Player -->
+        <div class="videoPlayer">
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/jJAO-QORvr8" frameborder="0" allowfullscreen></iframe>
+            <iframe width="320" height="180" src="https://www.youtube.com/embed/Ox66tlESBjc" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Profiles -->
+        <div>
+            <h2>Roofing Service Providers</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip Code</th>
+                        <th>Specialization</th>
+                        <th>Years in Service</th>
+                        <th>Rate ($)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>s.green</td>
+                        <td>New York</td>
+                        <td>NY</td>
+                        <td>10001</td>
+                        <td>Shingle</td>
+                        <td>10</td>
+                        <td>8000.00</td>
+                    </tr>
+                    <tr>
+                        <td>k.wilmot</td>
+                        <td>Utica</td>
+                        <td>NY</td>
+                        <td>13501-13502</td>
+                        <td>Metal</td>
+                        <td>
+</td>
+                        <td>12000.00</td>
+                    </tr>
+                    <!-- Add more profiles as needed -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Calculator -->
+        <div class="sidebar">
+            <h2>Roofing Service Quote Estimator</h2>
+            <form id="quoteForm">
+                <label for="roofSize">Roof Size (sqft):</label>
+                <input type="number" id="roofSize" name="roofSize" required>
+
+                <label for="roofType">Roof Type:</label>
+                <select id="roofType" name="roofType" required>
+                    <option value="flat">Flat</option>
+                    <option value="shingle">Shingle</option>
+                    <option value="metal">Metal</option>
+                    <option value="tile">Tile</option>
+                </select>
+
+                <label for="damageLevel">Damage Level (1-10):</label>
+                <input type="number" id="damageLevel" name="damageLevel" min="1" max="10" required>
+
+                <label for="leakCount">Number of Leaks:</label>
+                <input type="number" id="leakCount" name="leakCount" min="0" required>
+
+                <label for="propertyType">Property Type:</label>
+                <select id="propertyType" name="propertyType" required>
+                    <option value="home">Home</option>
+                    <option value="condo">Condo</option>
+                    <option value="company">Company</option>
+                    <option value="corporation">Corporation</option>
+                </select>
+
+                <button type="button" id="calculateBtn" onclick="calculateQuote()">Calculate Quote</button>
+
+                <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for calculating quote -->
+    <script>
+        function calculateQuote() {
+            // Retrieve form values
+            var roofSize = parseFloat(document.getElementById('roofSize').value);
+            var damageLevel = parseInt(document.getElementById('damageLevel').value);
+            var leakCount = parseInt(document.getElementById('leakCount').value);
+            var rate = 0;
+
+            // Calculate rate based on input values (dummy calculation for demonstration)
+            rate = (roofSize * damageLevel) / (leakCount + 1);
+
+            // Display result
+            document.getElementById('result').innerHTML = "Estimated Quote: $" + rate.toFixed(2);
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

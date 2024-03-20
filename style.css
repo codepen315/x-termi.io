@@ -1,0 +1,31 @@
+img,center {
+  background-color:darkgray;
+}
+
+        /* Example CSS for positioning the image */
+        #logo {
+            width: 150px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Adjust margin as needed */
+        }
+        /* Example CSS for navigation bar */
+        nav {
+            background-color: #333; /* Adjust color as needed */
+            color: white; /* Adjust text color as needed */
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        /* Adjust page width */
+        body {
+            max-width: 1200px; /* Adjust as needed */
+            margin: 0 auto; /* Center content */
+            padding: 0 20px; /* Add space around content */
+        }
